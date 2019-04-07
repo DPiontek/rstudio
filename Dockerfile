@@ -42,8 +42,8 @@ cmake
 
 #oracle java, apt-add-repository pulls key but fails to properly import it /o\ - hence the extra apt-key adv
 RUN apt-get install -y apt-utils software-properties-common debconf-utils gpg gpg-agent && \
-LC_ALL=C.UTF-8 add-apt-repository -y -m --keyserver keyserver.ubuntu.com:80 ppa:linuxuprising/java && \
-apt-key adv --keyserver keyserver.ubuntu.com:80 --recv-keys EA8CACC073C3DB2A && \
+LC_ALL=C.UTF-8 add-apt-repository -y -m --keyserver hkp://keyserver.ubuntu.com:80 ppa:linuxuprising/java && \
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EA8CACC073C3DB2A && \
 echo 'deb http://ftp.de.debian.org/debian/ stretch-backports main contrib non-free' >/etc/apt/sources.list.d/backports.list && \
 apt-get update && \
 echo 'oracle-java11-installer shared/accepted-oracle-license-v1-2 select true' | debconf-set-selections && \
