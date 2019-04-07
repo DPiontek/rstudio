@@ -1,5 +1,5 @@
 # Base image
-FROM rocker/verse:3.5.1
+FROM rocker/rstudio:3.5.1
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -95,11 +95,3 @@ Rscript build_r.R
 # Install some packages directly from github which are not on CRAN yet
 RUN Rscript -e \"library(devtools); install_github('AppliedDataSciencePartners/xgboostExplainer')\"
 EXPOSE 8787
-
-LABEL de.axa.ap.json.compose '{"rstudio":{ \
-"image": "${ECR}rstudio:latest", \
-"restart": "unless-stopped", \
-"volumes":["/home/${USER}:/home/${USER}", "/home/shared_folders:/home/shared_folders"], \
-"user": "root", \
-"environment":["ROOT=TRUE", "VIRTUAL_PORT=8787", "DISABLE_AUTH=true"], \
-"ports": ["127.0.0.1:8787:8787"]}}'
