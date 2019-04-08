@@ -92,5 +92,5 @@ cd LightGBM >> /install2.r.log 2>> /install2.r.err && \
 Rscript build_r.R >> /install2.r.log 2>> /install2.r.err || :
 
 # Install some packages directly from github which are not on CRAN yet
-RUN Rscript -e \"library(devtools); install_github('AppliedDataSciencePartners/xgboostExplainer')\" >> /install2.r.log 2>> /install2.r.err || :
+#RUN Rscript -e \"library(devtools); install_github('AppliedDataSciencePartners/xgboostExplainer')\" >> /install2.r.log 2>> /install2.r.err || :
 EXPOSE 8787
