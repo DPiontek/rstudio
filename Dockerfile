@@ -62,9 +62,9 @@ apt-get install -y -qq git -t stretch-backports
 RUN for pack in abind acepack assertr assertthat AUC\
  backports base base64enc BBmisc BH biglm bindr bindrcpp bit bit64 bitops blob boot brew broom\
  callr car carData caret caTools cellranger checkmate chron class classInt cli clipr cluster coda codetools colorspace compare compiler corrplot covr crayon crosstalk curl CVSTRUN install2.r -s -e data.table datasets DBI dbplyr ddalpha debugme deldir DEoptimR desc devtools DiagrammeR dichromat digest dimRed directlabels doParallel downloader dplyr drat DRR DT daff\
- e1071 effects EnvStats estimability evaluate expm\
+ e1071 effects entropy EnvStats estimability evaluate expm\
  fasttime flextable forcats foreach foreign formatR Formula formula.tools futile.logger futile.options\
- GA gbm gdata gdtools geojsonlint geometry geosphere GGally ggplot2 ggrepel ggvis git2r glmnet glmnetUtils glue gmodels gnm goftest gower gplots graphics grDevices grid gridBase gridExtra gsubfn gtable gtools ggridges\
+ GA gam gbm gdata gdtools geojsonlint geometry geosphere GGally ggplot2 ggrepel ggvis git2r glmnet glmnetUtils glue gmodels gnm goftest gower gplots graphics grDevices grid gridBase gridExtra gsubfn gtable gtools ggridges\
  h2o h2o4gpu haven HDtweedie hexbin highr Hmisc hms htmlTable htmltools htmlwidgets httpuv httr\
  igraph influenceR inline ipred irace irlba iterators itertools\
  jqr jsonlite jsonvalidate\
@@ -72,12 +72,12 @@ RUN for pack in abind acepack assertr assertthat AUC\
  labeling lambda.r later lattice latticeExtra lava lazyeval leaflet LearnBayes liqueueR lme4 lmtest lpSolve lubridate\
  magic magrittr manipulateWidget mapproj maps maptools markdown MASS Matching MatchIt Matrix MatrixModels matrixStats maxLik memoise methods mgcv microbenchmark mime miniCRAN miniUI minqa miscTools mlogit mlr mnlogit mnormt ModelMetrics modelr moments multcomp munsell mvtnorm\
  neldermead networkD3 nlme nloptr NMF nnet nortest numDeriv\
- officer openssl openxlsx operator.tools optimbase optimsimplex optmatch osmar\
- packrat pander parallel parallelMap ParamHelpers party pbkrtest pdp pillar pkgconfig pkgmaker plogr plotly plyr png polspline polyclip praise prettyunits pROC processx prodlim profvis progress promises proto pryr psych purrr\
+ officer openssl openxlsx operator.tools optimbase optimsimplex optmatch optrees osmar\
+ packrat pander parallel parallelMap ParamHelpers party pbkrtest pdp pillar pkgconfig pkgmaker plogr plotly plyr png polspline polyclip praise prettyunits pROC processx prodlim profvis progress promises proto pryr pscl psych purrr\
  quadprog quantreg qvcalc\
  reticulate R.methodsS3 R.oo R.utils R6 randomForest RANN raster RColorBrewer Rcpp RcppArmadillo RcppEigen RcppRoll RCurl readr readxl recipes registry relimp rematch reprex reshape reshape2 rex grenoud rgexf rio RJDBC rlang rlist rmarkdown rms rngtools robustbase ROCR RODBC Rook roxygen2 rpart rprojroot RSQLite rstudioapi rvest\
  sandwich satellite scales SDMTools selectr sfsmisc shiny shinyBS shinydashboard shinyjs shinythemes skimr sourcetools sp SparseM spatial SpatialPack spatstat spatstat.data spatstat.utils spData spdep splines splitstackshape sqldf SQUAREM stargazer statar statmod stats stats4 stringdist stringi stringr survey survival svglite\
- tensorflow tcltk TDboost tensor testthat TH.data tibble tictoc tidyr tidyselect tidyverse timeDate timeSeries tinytex tools tweedie\
+ tensorflow tcltk TDboost tensor testthat TH.data tibble tictoc tidyr tidyselect tidyverse timeDate timeSeries tinytex tools tsne tweedie\
  utf8 utils uuid\
  V8 viridis viridisLite visNetwork vcd\
  waterfall waterfalls webshot whisker withr\
