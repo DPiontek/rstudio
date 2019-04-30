@@ -66,7 +66,7 @@ RUN for pack in abind acepack assertr assertthat AUC\
  fasttime flextable forcats foreach foreign formatR Formula formula.tools futile.logger futile.options\
  GA gam gbm gdata gdtools geojsonlint geometry geosphere GGally ggplot2 ggrepel ggvis git2r glmnet glmnetUtils glue gmodels gnm goftest gower gplots graphics grDevices grid gridBase gridExtra gsubfn gtable gtools ggridges\
  h2o h2o4gpu haven HDtweedie hexbin highr Hmisc hms htmlTable htmltools htmlwidgets httpuv httr\
- igraph influenceR inline ipred irace irlba iterators itertools\
+ igraph iml influenceR inline ipred irace irlba iterators itertools\
  jqr jsonlite jsonvalidate\
  kernlab KernSmooth kknn knitr\
  labeling lambda.r later lattice latticeExtra lava lazyeval leaflet LearnBayes liqueueR lme4 lmtest lpSolve lubridate\
