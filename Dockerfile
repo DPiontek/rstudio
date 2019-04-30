@@ -61,7 +61,7 @@ apt-get install -y -qq git -t stretch-backports
 # - Currently not working: rjags rJava
 RUN for pack in abind acepack assertr assertthat AUC\
  backports base base64enc BBmisc BH biglm bindr bindrcpp bit bit64 bitops blob boot brew broom\
- callr car carData caret caTools cellranger checkmate chron class classInt cli clipr cluster coda codetools colorspace compare compiler corrplot covr crayon crosstalk curl CVSTRUN install2.r -s -e data.table datasets DBI dbplyr ddalpha debugme deldir DEoptimR desc devtools DiagrammeR dichromat digest dimRed directlabels doParallel downloader dplyr drat DRR DT daff\
+ callr car carData caret caTools cellranger checkmate chron class classInt cli clipr cluster coda codetools colorspace compare compiler corrplot covr crayon crosstalk curl CVST data.table datasets DBI dbplyr ddalpha debugme deldir DEoptimR desc devtools DiagrammeR dichromat digest dimRed directlabels doParallel downloader dplyr drat DRR DT daff\
  e1071 effects entropy EnvStats estimability evaluate expm\
  fasttime flextable forcats foreach foreign formatR Formula formula.tools futile.logger futile.options\
  GA gam gbm gdata gdtools geojsonlint geometry geosphere GGally ggplot2 ggrepel ggvis git2r glmnet glmnetUtils glue gmodels gnm goftest gower gplots graphics grDevices grid gridBase gridExtra gsubfn gtable gtools ggridges\
