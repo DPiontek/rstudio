@@ -61,7 +61,8 @@ apt-get install -y -qq git -t stretch-backports
 # - Currently not working: rjags rJava
 RUN for pack in abind acepack assertr assertthat AUC\
  backports base base64enc BBmisc BH biglm bindr bindrcpp bit bit64 bitops blob boot brew broom\
- callr car carData caret caTools cellranger checkmate chron class classInt cli clipr cluster coda codetools colorspace compare compiler corrplot covr crayon crosstalk curl CVST data.table datasets DBI dbplyr ddalpha debugme deldir DEoptimR desc devtools DiagrammeR dichromat digest dimRed directlabels doParallel downloader dplyr drat DRR DT daff\
+ callr car carData caret caTools cellranger checkmate chron class classInt cli clipr cluster coda codetools colorspace compare compiler corrplot covr crayon crosstalk curl CVST \
+ data.table datasets DBI dbplyr ddalpha debugme deldir DEoptimR desc devtools DiagrammeR dichromat digest dimRed directlabels doParallel downloader dplyr drat DRR DT daff\
  e1071 effects entropy EnvStats estimability evaluate expm\
  fasttime flextable forcats foreach foreign formatR Formula formula.tools futile.logger futile.options\
  GA gam gbm gdata gdtools geojsonlint geometry geosphere GGally ggplot2 ggrepel ggvis git2r glmnet glmnetUtils glue gmodels gnm goftest gower gplots graphics grDevices grid gridBase gridExtra gsubfn gtable gtools ggridges\
@@ -76,7 +77,7 @@ RUN for pack in abind acepack assertr assertthat AUC\
  packrat pander parallel parallelMap ParamHelpers party pbkrtest pdp pillar pkgconfig pkgmaker plogr plotly plyr pmml pmmlTransformations png polspline polyclip praise prettyunits pROC processx prodlim profvis progress promises proto pryr pscl psych purrr\
  quadprog quantreg qvcalc\
  reticulate R.methodsS3 R.oo R.utils R6 randomForest RANN raster RColorBrewer Rcpp RcppArmadillo RcppEigen RcppRoll RCurl readr readxl recipes registry relimp rematch reprex reshape reshape2 rex rgenoud rgexf rio RJDBC rlang rlist rmarkdown rms rngtools robustbase ROCR RODBC Rook roxygen2 rpart rprojroot RSQLite rstudioapi rvest\
- sandwich satellite scales SDMTools selectr sfsmisc shiny shinyBS shinydashboard shinyjs shinythemes skimr sourcetools sp SparseM spatial SpatialPack spatstat spatstat.data spatstat.utils spData spdep splines splitstackshape sqldf SQUAREM stargazer statar statmod stats stats4 stringdist stringi stringr survey survival svglite\
+ sandwich sas7bdat satellite scales SDMTools selectr sfsmisc shiny shinyBS shinydashboard shinyjs shinythemes skimr sourcetools sp SparseM spatial SpatialPack spatstat spatstat.data spatstat.utils spData spdep splines splitstackshape sqldf SQUAREM stargazer statar statmod stats stats4 stringdist stringi stringr survey survival svglite\
  tensorflow tcltk TDboost tensor testthat TH.data tibble tictoc tidyr tidyselect tidyverse timeDate timeSeries tinytex tools tsne tweedie\
  utf8 utils uuid\
  V8 viridis viridisLite visNetwork vcd vtreat\
