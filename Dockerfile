@@ -86,6 +86,7 @@ RUN for pack in abind acepack assertr assertthat AUC\
  yaImpute yaml\
  zip zoo\
  rgl forestFloor geojson gsl mapview odbc protolite QRM tmap tmaptools spatialEco sf RPostgreSQL rmapshaper rgl rgeos rgdal gdalUtils udunits2 units ggmap\
+ rpart.plot partykit e1071 MICE Mnet gganmiate ggdendro ggfortify ggthemes ggpubs gggridge gggrepel ggcorrplot ggradar ggiraph gapminder esquisse knitr FactoMineR\
  ; do install2.r -s -e ${pack} >> /install2.r.log 2>> /install2.r.err || : ; done
 # Install lightgbm
 RUN git clone --recursive https://github.com/Microsoft/LightGBM >> /install2.r.log 2>> /install2.r.err && \
