@@ -40,15 +40,39 @@ ccache \
 parallel \
 cmake
 
+# INSTALL JAVA
+RUN export HTTP_PROXY=${net_proxy} &&\
+    export HTTPS_PROXY=${net_proxy} &&\
+    export http_proxy=${net_proxy} &&\
+    export https_proxy=${net_proxy} &&\
+    DEBIAN_FRONTEND=noninteractive apt-get update &&\
+    DEBIAN_FRONTEND=noninteractive apt-get install --yes openjdk-8-jdk &&\
+    DEBIAN_FRONTEND=noninteractive apt-get clean &&\
+    rm -rf /var/lib/apt/lists/*
+
 #oracle java, apt-add-repository pulls key but fails to properly import it /o\ - hence the extra apt-key adv
-RUN apt-get install -y apt-utils software-properties-common debconf-utils gpg gpg-agent && \
-LC_ALL=C.UTF-8 add-apt-repository -y -m --keyserver hkp://keyserver.ubuntu.com:80 ppa:linuxuprising/java && \
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EA8CACC073C3DB2A && \
-echo 'deb http://ftp.de.debian.org/debian/ stretch-backports main contrib non-free' >/etc/apt/sources.list.d/backports.list && \
-apt-get update && \
-echo 'oracle-java11-installer shared/accepted-oracle-license-v1-2 select true' | debconf-set-selections && \
-apt-get install -y -qq oracle-java11-installer oracle-java11-set-default && R CMD javareconf && \
-apt-get install -y -qq git -t stretch-backports
+RUN export HTTP_PROXY=${net_proxy} &&\
+    export HTTPS_PROXY=${net_proxy} &&\
+    export http_proxy=${net_proxy} &&\
+    export https_proxy=${net_proxy} &&\
+    DEBIAN_FRONTEND=noninteractive apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y apt-utils \
+        software-properties-common\
+        debconf-utils\
+        gpg\
+        gpg-agent && \
+    #LC_ALL=C.UTF-8 add-apt-repository --yes -m  ppa:linuxuprising/java && \
+    #DEBIAN_FRONTEND=noninteractive apt-key adv  --recv-keys EA8CACC073C3DB2A && \
+    #echo 'deb http://ftp.de.debian.org/debian/ stretch-backports main contrib non-free' >/etc/apt/sources.list.d/backports.list && \
+    DEBIAN_FRONTEND=noninteractive apt-get update && \
+    #echo 'oracle-java11-installer shared/accepted-oracle-license-v1-2 select true' | debconf-set-selections && \
+    #DEBIAN_FRONTEND=noninteractive apt-get install --yes -qq oracle-java11-installer\
+    #    oracle-java11-set-default &&\
+    R CMD javareconf && \
+    DEBIAN_FRONTEND=noninteractive apt-get install --yes -qq git &&\
+    #-t stretch-backports &&\
+    DEBIAN_FRONTEND=noninteractive apt-get clean &&\
+    rm -rf /var/lib/apt/lists/*
 
 # Install R packages -----------------------------------------------
 #
